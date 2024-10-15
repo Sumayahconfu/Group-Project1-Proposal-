@@ -1,0 +1,68 @@
+/* Set the background for the entire webpage */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('yellow.back.jpg'); /* Yellow background */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container for the nutrition facts */
+.nutrition-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: adds light transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the nutrition facts box */
+.nutrition-box {
+    background-image: url('yellow.box.jpg'); /* Yellow box background */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for headings */
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* Styling for the list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Styling for the back button */
+.back-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff5722; /* Orange button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}

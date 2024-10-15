@@ -63,3 +63,24 @@ body {
     background-color: #d8b6ff;
     transform: scale(1.05);
 }
+/* Styling for the back button */
+.back-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff5722; /* Orange background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}

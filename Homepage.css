@@ -1,0 +1,72 @@
+/* Set the background for the homepage */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Home.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styling for the homepage container */
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+/* General styling for the boxes */
+.box {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+.box-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.6s;
+}
+
+.box:hover .box-inner {
+    transform: rotateY(180deg);
+}
+
+.box-front, .box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('Red.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.box-front a, .box-back a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.box-back {
+    transform: rotateY(180deg);
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for text clarity */
+}
+
+.box-back a {
+    color: #FFD700; /* Optional: Gold color for the person's name */
+}
