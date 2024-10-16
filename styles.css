@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Rotating Card Section */
+.card-section {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.card-container {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.rotating-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card-container:hover .rotating-card {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Front Face: Image */
+.card-front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;  
+    filter: brightness(95%);  
+}
+
+
+.card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+
+.main-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.ingredients, .nutrition-facts {
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ingredient-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredient-list li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.ingredient-list li:hover {
+    background-color: #ffe8a1;
+    border-radius: 5px;
+}
+
+/* Instructions Section */
+.instructions {
+    background-color: white;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.steps {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.steps li {
+    margin: 15px 0;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.steps li:hover {
+    background-color: #ffd54f;
+    border-radius: 5px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
