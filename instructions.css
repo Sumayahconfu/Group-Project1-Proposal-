@@ -1,0 +1,68 @@
+/* Set the background for the entire webpage */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('purple.back.jpg'); /* Purple background */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container for all instructions */
+.instructions-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: adds light transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for each instruction box */
+.instruction-box {
+    background-image: url('purple.box.jpg'); /* Purple box background */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the headings */
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Styling for the list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Styling for the back button */
+.back-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff5722; /* Orange button to match the theme */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}
